@@ -8,7 +8,7 @@ You need these file for the injector to work, i will update this repo a lot, lik
 - tcpgecko.py
 - common.py
 
-You also need to install Python 2.7
+You also need to install Python 2.7 and to install requests lib. "python -m pip install requests"
 
 Note, this injector UI is bad becaus i've removed in the hurry a lot of fonctionality such as:
 
