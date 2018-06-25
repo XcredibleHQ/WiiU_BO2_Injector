@@ -141,12 +141,6 @@ def get_news():
 	btn_text = str_end(buf, z)
 	return msg, link, btn_text
 
-RES_TEXT = get_res()
-
-NEWS_TEXT, LINK_NEWS, BUTTON = get_news()
-
-CHANGELOG_TEXT = get_changelog()
-
 
 def open_news():
 	webbrowser.open(LINK_NEWS)
