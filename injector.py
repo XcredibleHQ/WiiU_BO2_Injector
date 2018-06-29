@@ -806,14 +806,8 @@ res_i.config(state=DISABLED)
 blank2 = Label(tab2, text=" ")
 blank2.grid(row=0, column = 0)
 
-if config_exist == False:
-	nip = StringVar()
-	nip.set("Wii U IP Addr")
-	f_config = open("ip.config", "a+")
-else:
-	nip = StringVar()
-	f_config = open("ip.config", "r+")
-	nip.set(f_config.read())
+nip = StringVar()
+nip.set("WiiU Internal IP")
 
 n_ip = Entry(tab2, textvariable=nip)
 n_ip.grid(row=1, column=0)
