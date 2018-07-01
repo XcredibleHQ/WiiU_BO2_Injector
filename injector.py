@@ -120,18 +120,18 @@ def dl_res_file():
 
 
 def get_changelog():
-	url = "http://rambo6glaz.000webhostapp.com/get_changelog.php?x=1"
+	url = "http://app-1530281713.000webhostapp.com/get_changelog.php?x=1"
 	r = requests.get(url)
 	return r.content
 def get_res():
-	url = "http://rambo6glaz.000webhostapp.com/get_changelog.php?x=0"
+	url = "http://app-1530281713.000webhostapp.com/get_changelog.php?x=0"
 	r = requests.get(url)
 	return r.content
 
 
 
 def get_news():
-	url = "http://rambo6glaz.000webhostapp.com/get_changelog.php?x=2"
+	url = "http://app-1530281713.000webhostapp.com/get_changelog.php?x=2"
 	r = requests.get(url)
 	buf = r.content
 	msg = str_end(buf, 0)
@@ -1127,7 +1127,7 @@ def change_desc():
 	IMDisableAPD()
 
 def report_msg():
-	url = "http://rambo6glaz.000webhostapp.com/report_message.php?msg="+report_var.get()+"&uname=Free_INJECT"
+	url = "http://app-1530281713.000webhostapp.com/report_message.php?msg="+report_var.get()+"&uname=Free_INJECT"
 	r = requests.get(url)
 	if "<html>" in r.content:
 		print("Server rejected the request, retry.")
